@@ -1,66 +1,70 @@
-* {
+/* '*'은 전체선택자 */
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border까지 부모가 감쌀 수 있도록 */
 }
+body{
 
-body {
     background-size: cover;
 }
+.container{
 
-.container {
+    /* 화면을 유연하게 정렬 */
     display: flex;
-    /* 화면을 유연하게 정렬할 수 있다. */
 }
 
-#main-container {
+#main-container{
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    /* 방향: 세로 */
     align-items: center;
-    /* 중앙 정렬 */
     justify-content: space-between;
-    /* 양 끝으로 */
+     
 }
 
-.question {
+.question{
     width: 50%;
     height: 20vh;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgb(255, 255,255, 0.5);
     border: 3px solid gray;
     border-radius: 20px;
     align-items: center;
     justify-content: center;
+    /* 투명도 : opocity */
+    /*opacity: 50%;*/
 }
 
-.choice {
+.choice{
     display: none;
     width: 50%;
     height: 45vh;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
     /* 기본축의 간격을 고르게 */
+    justify-content: space-evenly;
+     
+
 }
 
-.choice-item {
+.choice-item{
     width: 100%;
     height: 30%;
     border: 3px solid gray;
     border-radius: 20px;
     background-color: white;
-    align-items: center;
+    text-align: center;
     justify-content: center;
+    /* 에니메이션  부트럽게 */
     transition: 0.6s;
-    /* 애니메이션 부드럽게 */
     opacity: 50%;
 }
 
-.choice-item:hover {
-    /* font-color X 폰트의 컬러는 그냥 color */
+.choice-item:hover{
+    
     opacity: 100%;
 }
-/* *은 모든 태그를 의미 */
+
+ 
+ 
