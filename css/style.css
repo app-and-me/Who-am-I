@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border까지 부모가 감쌀 수 있도록 */
+}
+
+html,
+body {
+    width: 100%;
+}
