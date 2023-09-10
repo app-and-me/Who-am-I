@@ -1,7 +1,3 @@
-// let : 변수
-// var : 변수
-// const : 상수(변하지 않는)
-
 let data = {
     "question" : [
         {
