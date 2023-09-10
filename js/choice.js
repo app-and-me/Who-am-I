@@ -29,6 +29,10 @@ for (let item of choiceItem) {
     
 // 3초 뒤에 선택지 보이도록
 setTimeout(()=> {
+    // 아이디가 1이면 다른 html 파일 불러오기
+    if (id === 1) {
+        window.open('../location.html', '_top');
+    }
     choiceDiv.style.display = `flex`; 
 }, 3000);
 
