@@ -31,7 +31,7 @@ for (let item of choiceItem) {
 setTimeout(()=> {
     // 아이디가 1이면 다른 html 파일 불러오기
     if (id === 1) {
-        window.open('../location.html', '_top');
+        window.open('../seat.html', '_top');
     }
     choiceDiv.style.display = `flex`; 
 }, 3000);
