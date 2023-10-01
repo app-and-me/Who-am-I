@@ -15,10 +15,10 @@ body.style.backgroundImage = `url('../image/bg1.png')`
 
 // 선택지 등록하기
 const choiceItem = document.getElementsByClassName('choice-item');
-choiceItem[0].innerHTML = data.choice[id].content1;
-choiceItem[1].innerHTML = data.choice[id].content2;
-choiceItem[2].innerHTML = data.choice[id].content3;
-
+let choiceItemList = [...choiceItem];
+choiceItemList.forEach((e, i) => {
+    e.innerHTML = data.choice[id].contents[i];
+})
 // 클릭할 때 다음 아이디로 넘기기
 for (let item of choiceItem) {
     item.onclick = () => {
