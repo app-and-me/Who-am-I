@@ -3,6 +3,6 @@ const seatList = [...seatDivs];
 
 seatList.forEach(seat => {
     seat.onclick = () => {
-        window.open('../choice.html?id=3');
+        window.open('../choice.html?id=2');
     };
 });
