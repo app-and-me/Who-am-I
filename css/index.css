@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'HANAMDAUM';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/HANAMDAUM.woff2') format('woff2');
-    font-weight: 400;
+    font-family: 'EF_watermelonSalad';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-EF@1.0/EF_watermelonSalad.woff2') format('woff2');
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -21,13 +21,13 @@
     width: 30vw;
     height: 10vh;
     outline: none;
-    border: 1px solid #cc0b4c;
+    border: 1px solid hotpink;
     border-radius: 30px;
     background: none;
-    font-family: 'HANAMDAUM';
+    font-family: 'EF_watermelonSalad';
     font-size: 3rem;
     font-weight: 700;
-    color: #cc0b4c;
+    color: hotpink;
     transition: 0.3s;
     cursor: pointer;
 }
@@ -36,10 +36,10 @@
     width: 30vw;
     height: 10vh;
     outline: none;
-    border: 1px solid #cc0b4c;
+    border: 1px solid hotpink;
     border-radius: 30px;
-    background: #cc0b4c;
-    font-family: 'HANAMDAUM';
+    background: hotpink;
+    font-family: 'EF_watermelonSalad';
     font-size: 3rem;
     font-weight: 700;
     color: #FFF;
