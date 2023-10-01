@@ -10,6 +10,10 @@ for (var key in localStorage) {
 let id = parseInt(new URL(location.href).searchParams.get('id'));
 console.log(id);
 
+if  (id === 8) {
+    window.open('../result.html', '_top');
+}
+
 // 질문 html 요소 가져오기
 const questionSpan = document.getElementsByClassName("question")[0].getElementsByTagName("span")[0];
 questionSpan.innerHTML = data.question[id].content;
@@ -129,6 +133,7 @@ setTimeout(()=> {
     if (id === 1) {
         window.open('../seat.html', '_top');
     }
+
     choiceDiv.style.display = `flex`; 
 }, 3000);
 
