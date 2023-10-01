@@ -32,7 +32,7 @@ seatList.forEach((seat, i) => {
                 addScore('깔끔왕');
                 break;
         }
-        window.open('../choice.html?id=2');
+        window.open('../choice.html?id=2', '_top');
     };
 });
 
