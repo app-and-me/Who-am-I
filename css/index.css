@@ -1,10 +1,15 @@
 @font-face {
-    font-family: 'HANAMDAUM';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/HANAMDAUM.woff2') format('woff2');
-    font-weight: 400;
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
     font-style: normal;
 }
 
+:root {
+    --black-color: #000;
+    --pink-color: #F06AA7;
+    --main-font: 'NanumSquareNeo-Variable';
+}
 .container {
     display: flex;
 }
@@ -21,13 +26,14 @@
     width: 30vw;
     height: 10vh;
     outline: none;
-    border: 1px solid #cc0b4c;
+    border: 1px solid;
+    border-color: var(--pink-color);
     border-radius: 30px;
     background: none;
-    font-family: 'HANAMDAUM';
+    font-family: var(--main-font);
     font-size: 3rem;
     font-weight: 700;
-    color: #cc0b4c;
+    color: var(--black-color);
     transition: 0.3s;
     cursor: pointer;
 }
@@ -36,10 +42,11 @@
     width: 30vw;
     height: 10vh;
     outline: none;
-    border: 1px solid #cc0b4c;
+    border: 1px solid;
+    border-color: var(--pink-color);
     border-radius: 30px;
-    background: #cc0b4c;
-    font-family: 'HANAMDAUM';
+    background: var(--pink-color);
+    font-family: var(--main-font);
     font-size: 3rem;
     font-weight: 700;
     color: #FFF;

@@ -22,7 +22,7 @@ console.log("Key with Maximum Score:", maxKey);
 
 const resultTitle = document.getElementsByClassName('result-title')[0];
 const resultExplain = document.getElementsByClassName('result-explain')[0];
-const img = document.getElementsByTagName('img')[0];
+const img = document.getElementsByClassName('character-img')[0];
 
 for (let i in data.characters) {
     if (data.characters[i].name === maxKey) {
@@ -30,4 +30,9 @@ for (let i in data.characters) {
         resultExplain.innerHTML = data.characters[i].explain;
         img.src = data.characters[i].img;
     }
+}
+
+const restartButton = document.getElementsByClassName('restart')[0];
+restartButton.onclick = () => {
+    window.open('../index.html', '_top');
 }

@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --main-font: 'NanumSquareNeo-Variable';
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.character-img {
+    margin-top: calc(80px + 20vh);
+    width: 25vw;
+}
+
+.result-title,
+.round {
+    position: absolute;
+    top: 8vh;
+    margin: 0 auto;
+}
+
+.result-title {
+    font-family: var(--main-font);
+    font-size: 3rem;
+    margin-top: 40px;
+}
+
+.result-explain {
+    width: 30vw;
+    margin-top: 30px;
+    font-family: var(--main-font);
+    font-size: 2rem;
+    text-align: center;
+    line-height: 130%;
+}
+
+.restart {
+    margin-top: 60px;
+    outline: none;
+    border: none;
+    background-color: hotpink;
+    width: 20vw;
+    height: 3vw;
+    font-family: var(--main-font);
+    font-size: 2rem;
+    color: #FFF;
+    transition: 0.3s;
+    border-radius: 10px;
+}   
+
+.restart:hover {
+    background-color: #FFF;
+    color: hotpink;
+    border: 1px solid hotpink;
+}
