@@ -71,6 +71,7 @@ body {
     font-size: 2rem;
     font-weight: 700;
     animation: vibrationLeft .2s infinite;
+    text-align: center;
 }
 
 .choice-item:nth-child(2) {
