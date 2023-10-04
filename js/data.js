@@ -125,63 +125,63 @@ let data = {
     "characters" : [
         {
             "name": "열정왕",
-            "img" : "../image/열정왕.jpg",
+            "img" : "./image/열정왕.jpg",
             "explain" : "",
             "bad": "",
             "good": ""
         },
         {
             "name": "조용왕",
-            "img" : "../image/조용왕.jpg",
+            "img" : "./image/조용왕.jpg",
             "explain" : "",
             "bad": "",
             "good": ""
         },
         {
             "name": "열광왕",
-            "img" : "../image/열광왕.jpg",
+            "img" : "./image/열광왕.jpg",
             "explain" : "",
             "bad": "",
             "good": ""
         },
         {
             "name": "정보왕",
-            "img" : "../image/정보왕.jpg",
+            "img" : "./image/정보왕.jpg",
             "explain" : "",
             "bad": "",
             "good": ""
         },
         {
             "name": "모범왕",
-            "img" : "../image/모범왕.jpg",
+            "img" : "./image/모범왕.jpg",
             "explain" : "",
             "bad": "",
             "good": ""
         },
         {
             "name": "돌아이",
-            "img" : "../image/돌아이.jpg",
+            "img" : "./image/돌아이.jpg",
             "explain" : "",
             "bad": "",
             "good": ""
         },
         {
             "name": "공감왕",
-            "img" : "../image/공감왕.jpg",
+            "img" : "./image/공감왕.jpg",
             "explain" : "",
             "bad": "",
             "good": ""
         },
         {
             "name": "허당왕",
-            "img" : "../image/허당왕.jpg",
+            "img" : "./image/허당왕.jpg",
             "explain" : "",
             "bad": "",
             "good": ""
         },
         {
             "name": "보부상",
-            "img" : "../image/보부상.jpg",
+            "img" : "./image/보부상.jpg",
             "explain" : "",
             "bad": "",
             "good": ""
