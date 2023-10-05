@@ -1,3 +1,13 @@
+const bgm = new Audio();
+bgm.src = '../sound/result_bgm.mp3';
+window.onload = ()=> {
+    bgm.play();
+};
+
+const buttonSound = new Audio();
+buttonSound.src = '../sound/common_button.wav';
+
+
 let scores = [];
 
 let localStorageArray = Object.entries(localStorage);
@@ -59,5 +69,8 @@ for (let i in data.characters) {
 
 const restartButton = document.getElementsByClassName('restart')[0];
 restartButton.onclick = () => {
-    window.open('../index.html', '_top');
-}
+    buttonSound.play();
+    setTimeout(()=>{
+        window.open('../index.html', '_top');
+    }, 300);
+};
