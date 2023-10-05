@@ -1,5 +1,6 @@
 const bgm = new Audio();
 bgm.src = '../sound/result_bgm.mp3';
+bgm.autoplay = true;
 window.onload = ()=> {
     bgm.play();
 };
