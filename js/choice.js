@@ -37,7 +37,7 @@ const choiceDiv = document.getElementsByClassName("choice")[0];
 
 // 배경 이미지 넣기
 const body = document.getElementsByTagName('body')[0];
-body.style.backgroundImage = `url('../image/bg1.png')`
+body.style.backgroundImage = `url('${data.question[id].bg}')`;
 
 // 선택지 등록하기
 const choiceItem = document.getElementsByClassName('choice-item');
