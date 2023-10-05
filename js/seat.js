@@ -1,8 +1,21 @@
+const current = Number(new URL(location.href).searchParams.get('current'));
+const bgm = new Audio();
+
+bgm.src = '../sound/common_bgm.mp3';
+bgm.currentTime = current;
+
+window.onload = () => {
+    bgm.play();
+};
+const buttonSound = new Audio();
+buttonSound.src = '../sound/common_button.wav';
+
 const seatDivs = document.getElementsByClassName('seat');
 const seatList = [...seatDivs];
 
 seatList.forEach((seat, i) => {
     seat.onclick = () => {
+        buttonSound.play();
         switch (i) {
             case 0: 
                 addScore('모범왕');
@@ -32,7 +45,10 @@ seatList.forEach((seat, i) => {
                 addScore('깔끔왕');
                 break;
         }
-        window.open('../choice.html?id=2', '_top');
+        setTimeout(()=>{
+            window.open(`../choice.html?id=2&current=${bgm.currentTime}`, '_top');
+        }, 300);
+        
     };
 });
 

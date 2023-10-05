@@ -12,6 +12,7 @@
 }
 
 body {
+    background: url('../image/bg2.png');
     background-size: cover;
     overflow: hidden;
     background-color: pink;
@@ -37,17 +38,24 @@ body {
 .question {
     width: 50%;
     height: 20vh;
-    background-color: var(--background-color);
     border-radius: 20px;
     align-items: center;
     justify-content: center;
+    animation: fadein 3s;
+    background: url('../image/q_bg.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.8;
 }
 
 .question > span {
     font-family: var(--main-font);
     font-size: 2.3rem;
-    font-weight: 300;
-    color: var(--black-color);
+    font-weight: 200;
+    text-align: center;
+    color: black;
+    transform: translateY(-20%);
+    opacity: 1;
 }
 
 .seat-container {
