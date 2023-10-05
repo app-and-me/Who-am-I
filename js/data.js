@@ -126,9 +126,9 @@ let data = {
         {
             "name": "깔끔왕",
             "img" : "./image/깔끔왕.jpg",
-            "explain" : {
+            "description" : {
                 "title": "알잘딱깔센하면 나지",
-                "content1": "당신의 유형은 깔끔왕 입니다!",
+                "content": "당신의 유형은 깔끔왕 입니다!",
                 "tag": [
                     "깔끔",
                     "책임감",
@@ -148,9 +148,9 @@ let data = {
         {
             "name": "열광왕",
             "img" : "./image/열광왕.jpg",
-            "explain" : {
+            "description" : {
                 "title": "내 새꾸들이 최고야..!!!",
-                "content1": "당신의 유형은 열광왕 입니다!",
+                "content": "당신의 유형은 열광왕 입니다!",
                 "tag": [
                     "과몰입",
                     "굿즈",
@@ -170,9 +170,9 @@ let data = {
         {
             "name": "조용왕",
             "img" : "./image/조용왕.jpg",
-            "explain" : {
+            "description" : {
                 "title": "나만의 공간은 필수야..!!",
-                "content1": "당신의 유형은 조용왕 입니다!",
+                "content": "당신의 유형은 조용왕 입니다!",
                 "tag": [
                     "관찰력",
                     "에너지 충전",
@@ -192,9 +192,9 @@ let data = {
         {
             "name": "정보왕",
             "img" : "./image/정보왕.jpg",
-            "explain" : {
+            "description" : {
                 "title": "모든 정보는 나에게로! 얘들아 좋은 소식!",
-                "content1": "당신의 유형은 정보왕 입니다!",
+                "content": "당신의 유형은 정보왕 입니다!",
                 "tag": [
                     "모든것",
                     "인싸",
@@ -214,9 +214,9 @@ let data = {
         {
             "name": "모범왕",
             "img" : "./image/모범왕.jpg",
-            "explain" : {
+            "description" : {
                 "title": "모르는 문제는 나에게",
-                "content1": "당신의 유형은 모범왕 입니다!",
+                "content": "당신의 유형은 모범왕 입니다!",
                 "tag": [
                     "열공",
                     "리더",
@@ -236,9 +236,9 @@ let data = {
         {
             "name": "돌아이",
             "img" : "./image/돌아이.jpg",
-            "explain" : {
+            "description" : {
                 "title": "저세상 텐션하면 나!",
-                "content1": "당신의 유형은 돌아이 입니다!",
+                "content": "당신의 유형은 돌아이 입니다!",
                 "tag": [
                     "분위기메이커",
                     "인기",
@@ -258,9 +258,9 @@ let data = {
         {
             "name": "공감왕",
             "img" : "./image/공감왕.jpg",
-            "explain" : {
+            "description" : {
                 "title": "상대방이 울면 같이 울어주는 공감능력 100%",
-                "content1": "당신의 유형은 공감왕 입니다!",
+                "content": "당신의 유형은 공감왕 입니다!",
                 "tag": [
                     "친구관계",
                     "기억력",
@@ -280,9 +280,9 @@ let data = {
         {
             "name": "허당왕",
             "img" : "./image/허당왕.jpg",
-            "explain" : {
+            "description" : {
                 "title": "ㅇㅓ..? 어디갔지…??",
-                "content1": "당신의 유형은 허당왕 입니다!",
+                "content": "당신의 유형은 허당왕 입니다!",
                 "tag": [
                     "어디갔지?",
                     "덤벙",
@@ -302,9 +302,9 @@ let data = {
         {
             "name": "보부상",
             "img" : "./image/보부상.jpg",
-            "explain" : {
+            "description" : {
                 "title": "필요한 거 있다고??  다 나한테 있어!",
-                "content1": "당신의 유형은 보부상 입니다!",
+                "content": "당신의 유형은 보부상 입니다!",
                 "tag": [
                     "마음씨가 넓은",
                     "이것저것",

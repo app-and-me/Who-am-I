@@ -6,6 +6,7 @@
 }
 
 :root {
+    --main-color: #FF4399;
     --main-font: 'NanumSquareNeo-Variable';
 }
 
@@ -42,31 +43,32 @@ body {
     margin-top: 40px;
 }
 
-.result-explain {
-    width: 30vw;
+.result-explain-container {
+    width: 70vw;
     margin-top: 30px;
     font-family: var(--main-font);
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
     line-height: 130%;
 }
 
 .restart {
-    margin-top: 60px;
+    margin: 60px 0 120px 0;
     outline: none;
-    border: none;
-    background-color: hotpink;
-    width: 20vw;
-    height: 3vw;
+    border: 1px solid;
+    border-color: var(--main-color);
+    background-color: #fff;
+    width: 25vw;
+    height: 10vw;   
     font-family: var(--main-font);
     font-size: 2rem;
-    color: #FFF;
+    color: #000;
     transition: 0.3s;
-    border-radius: 10px;
+    border-radius: 14px;
+    cursor: pointer;
 }   
 
 .restart:hover {
-    background-color: #FFF;
-    color: hotpink;
-    border: 1px solid hotpink;
+    background-color: var(--main-color);
+    color: #fff;
 }
