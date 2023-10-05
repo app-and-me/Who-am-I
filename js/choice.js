@@ -5,7 +5,6 @@ for (var key in localStorage) {
     }
 }
 
-
 // url 쿼리 값 가져오기
 let id = parseInt(new URL(location.href).searchParams.get('id'));
 console.log(id);
@@ -13,6 +12,21 @@ console.log(id);
 if  (id === 8) {
     window.open('../result.html', '_top');
 }
+
+const current = Number(new URL(location.href).searchParams.get('current'));
+
+// audio
+const bgm = new Audio();
+bgm.src = '../sound/common_bgm.mp3';
+bgm.currentTime = current;
+
+const buttonSound = new Audio();
+if (id === 7) {
+    buttonSound.src = '../sound/last_button.mp3';
+} else {
+    buttonSound.src = '../sound/common_button.wav';
+}
+
 
 // 질문 html 요소 가져오기
 const questionSpan = document.getElementsByClassName("question")[0].getElementsByTagName("span")[0];
@@ -34,7 +48,7 @@ choiceItemList.forEach((e, i) => {
 
     // 이벤트
     e.onclick = () => {
-
+        buttonSound.play();
         switch (id) {
             case 0:
                 {
@@ -118,7 +132,9 @@ choiceItemList.forEach((e, i) => {
     
         
         id++;
-        window.open(`choice.html?id=${id}`, '_top');
+        setTimeout(() => {
+            window.open(`choice.html?id=${id}&current=${bgm.currentTime}`, '_top');
+        }, 300);
     };
 });
 
@@ -131,9 +147,12 @@ function addScore(key) {
 setTimeout(()=> {
     // 아이디가 1이면 다른 html 파일 불러오기
     if (id === 1) {
-        window.open('../seat.html', '_top');
+        window.open(`../seat.html?current=${bgm.currentTime}`, '_top');
     }
 
     choiceDiv.style.display = `flex`; 
 }, 3000);
 
+window.onload = () => {
+    bgm.play();
+};
