@@ -10,7 +10,27 @@ let id = parseInt(new URL(location.href).searchParams.get('id'));
 console.log(id);
 
 if  (id === 8) {
-    window.open('../result.html', '_top');
+    let scores = [];
+
+    let localStorageArray = Object.entries(localStorage);
+
+    for (let [key, value] of localStorageArray) {
+        scores.push([key, parseInt(value)]);
+    }
+
+    let maxScore = -Infinity;
+    let maxKey = null;
+
+    for (let i = 0; i < scores.length; i++) {
+        let [key, score] = scores[i];
+        if (score > maxScore) {
+            maxScore = score;
+            maxKey = key;
+        }
+    }
+
+    window.open(`../result.html?character=${maxKey}`, '_top');
+
 }
 
 const current = Number(new URL(location.href).searchParams.get('current'));

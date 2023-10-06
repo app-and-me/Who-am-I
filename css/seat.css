@@ -42,9 +42,7 @@ body {
     align-items: center;
     justify-content: center;
     animation: fadein 3s;
-    background: url('../image/q_bg.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-color: rgba(255, 255, 255, 0.7);
     opacity: 0.8;
 }
 

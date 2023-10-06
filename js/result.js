@@ -8,28 +8,7 @@ window.onload = ()=> {
 const buttonSound = new Audio();
 buttonSound.src = '../sound/common_button.wav';
 
-
-let scores = [];
-
-let localStorageArray = Object.entries(localStorage);
-
-for (let [key, value] of localStorageArray) {
-    scores.push([key, parseInt(value)]);
-}
-
-let maxScore = -Infinity;
-let maxKey = null;
-
-for (let i = 0; i < scores.length; i++) {
-    let [key, score] = scores[i];
-    if (score > maxScore) {
-        maxScore = score;
-        maxKey = key;
-    }
-}
-
-console.log("Maximum Score:", maxScore);
-console.log("Key with Maximum Score:", maxKey);
+const key = new URL(location.href).searchParams.get('character');
 
 
 // 값 가져오기
@@ -52,18 +31,17 @@ const badTypeImg = badContainer.getElementsByClassName('type-img')[0];
 const badTypeTitle = badContainer.getElementsByClassName('type-title')[0];
 
 for (let i in data.characters) {
-    if (data.characters[i].name === maxKey) {
+    if (data.characters[i].name === key) {
         let character = data.characters[i];
         resultTitle.innerHTML = character.name;
-        // resultExplainContainer.innerHTML = data.characters[i].explain.title;
         characterImg.src = data.characters[i].img;
-        resultDescriptionTitle.innerHTML = character.description.title;
+        resultDescriptionTitle.innerHTML = '"'+ character.description.title +'"';
         resultContent.innerHTML = character.description.content;
         tagItems.forEach((e, index) => {
             e.innerHTML = '#' + character.description.tag[index];
         });
         personalItems.forEach((e, index) => {
-            e.innerHTML = '- ' + character.description.personal[index]; 
+            e.innerHTML = character.description.personal[index]; 
         });
 
         goodLabel.innerHTML = character.good;
@@ -81,4 +59,9 @@ restartButton.onclick = () => {
     setTimeout(()=>{
         window.open('../index.html', '_top');
     }, 300);
+};
+
+const allButton = document.getElementsByClassName('all-button')[0];
+allButton.onclick = () => {
+    window.open('../dictionary.html', '_top');
 };
