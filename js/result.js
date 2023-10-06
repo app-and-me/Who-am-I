@@ -63,7 +63,7 @@ for (let i in data.characters) {
             e.innerHTML = '#' + character.description.tag[index];
         });
         personalItems.forEach((e, index) => {
-            e.innerHTML = '- ' + character.description.personal[index]; 
+            e.innerHTML = character.description.personal[index]; 
         });
 
         goodLabel.innerHTML = character.good;
