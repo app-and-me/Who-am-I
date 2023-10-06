@@ -60,3 +60,8 @@ restartButton.onclick = () => {
         window.open('../index.html', '_top');
     }, 300);
 };
+
+const allButton = document.getElementsByClassName('all-button')[0];
+allButton.onclick = () => {
+    window.open('../dictionary.html', '_top');
+};
