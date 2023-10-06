@@ -1,7 +1,6 @@
 @font-face {
     font-family: 'NanumSquareNeo-Variable';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
-    font-weight: normal;
     font-style: normal;
 }
 
@@ -41,41 +40,54 @@ body {
 .result-title {
     font-family: var(--main-font);
     font-size: 3rem;
+    font-weight: 800;
     margin-top: 40px;
 }
 
 .result-explain-container {
-    width: 50vw;
+    width: 100%;
     margin-top: 30px;
     font-family: var(--main-font);
     font-size: 1.8rem;
     text-align: center;
     line-height: 130%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
-.result-description-title,
+.result-description-title {
+    font-weight: 600;
+    font-size: 4rem;
+}
+
 .result-content {
-    font-size: 2.3rem;
+    margin: 20px 0 0 0;
 }
 
 .result-tags {
-    margin-top: 40px;
+    margin: 40px 0;
     display: flex;
-    width: 100%;
+    flex-direction: row;
+    width: fit-content;
+    height: 2.3rem;
     column-gap: 20px;
     justify-content: center;
+    background-color: rgba(240, 106, 167, 0.24);
 }
 
 .tag-item {
-    background-color: #FF4399;
-    color: #fff;
+    color: #000;
+    font-weight: 100;
     margin-bottom: 40px;
 }
 
 .result-personals {
     display: flex;
     flex-direction: column;
-    text-align: left;
+    text-align: center;
     row-gap: 20px;
     width: 100%;
     margin: 0 0 40px 40px;
@@ -96,6 +108,7 @@ body {
 }
 
 .type {
+    font-weight: 800;
     font-size: 1.3rem;
 }
 
@@ -112,7 +125,7 @@ body {
     outline: none;
     border: 1px solid;
     border-color: var(--main-color);
-    background-color: #fff;
+    background-color: var(--main-color);
     width: 25vw;
     height: 7vh;   
     font-family: var(--main-font);
@@ -123,8 +136,3 @@ body {
     cursor: pointer;
     margin-bottom: 5vh;
 }   
-
-.restart:hover {
-    background-color: var(--main-color);
-    color: #fff;
-}
