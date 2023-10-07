@@ -46,9 +46,16 @@ for (let i in data.characters) {
 
         goodLabel.innerHTML = character.good;
         goodTypeImg.src = `../image/${character.good}.jpg`;
+        goodContainer.onclick = () => {
+            window.open(`../result.html?character=${character.good}`, '_top');
+        };
 
         badLabel.innerHTML = character.bad;
         badTypeImg.src = `../image/${character.bad}.jpg`;
+        badContainer.onclick = () => {
+            window.open(`../result.html?character=${character.bad}`, '_top');
+        };
+
     
     }
 }
@@ -65,3 +72,4 @@ const allButton = document.getElementsByClassName('all-button')[0];
 allButton.onclick = () => {
     window.open('../dictionary.html', '_top');
 };
+
