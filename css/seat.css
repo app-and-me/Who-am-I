@@ -5,10 +5,15 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+}
+
 :root {
     --background-color: rgba(255, 255, 255, 0.3);
     --black-color: #000;
-    --main-font: 'NanumSquareNeo-Variable';
+    --main-font: 'GmarketSansMedium';
 }
 
 body {
